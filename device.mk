@@ -8,5 +8,4 @@
 $(call inherit-product-if-exists, vendor/xiaomi/lavender/lavender-vendor.mk)
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
