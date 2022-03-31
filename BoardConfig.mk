@@ -64,5 +64,8 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Symlinks
 TARGET_MOUNT_POINTS_SYMLINKS := true
 
+# Vendor Security patch level
+VENDOR_SECURITY_PATCH := 2022-03-05
+
 # Inherit the proprietary files
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
