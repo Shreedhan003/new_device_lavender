@@ -10,6 +10,9 @@ DEVICE_PATH := device/xiaomi/lavender
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := lavender
 
+# Audio
+AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 
