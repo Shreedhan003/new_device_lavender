@@ -67,5 +67,11 @@ TARGET_MOUNT_POINTS_SYMLINKS := true
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := 2022-03-05
 
+# WLAN
+BOARD_HAS_QCOM_WLAN := true
+WIFI_DRIVER_FW_PATH_AP := "ap"
+WIFI_DRIVER_FW_PATH_STA := "sta"
+WIFI_DRIVER_FW_PATH_P2P := "p2p"
+
 # Inherit the proprietary files
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
