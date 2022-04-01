@@ -16,6 +16,11 @@ AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 
+# Bluetooth
+BOARD_HAVE_BLUETOOTH_QCOM := true
+QCOM_BT_USE_BTNV := true
+TARGET_USE_QTI_BT_STACK := true
+
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
