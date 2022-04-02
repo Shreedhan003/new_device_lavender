@@ -69,6 +69,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/etc/fstab.qcom
+
 # Symlinks
 TARGET_MOUNT_POINTS_SYMLINKS := true
 

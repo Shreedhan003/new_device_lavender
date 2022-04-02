@@ -69,6 +69,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Disable APEX compression
 PRODUCT_COMPRESSED_APEX := false
 
+# Init
+PRODUCT_PACKAGES += \
+    init.btmac.sh \
+    init.qcom.sensors.sh \
+    init.qti.dcvs.sh
+
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.asus.biometrics.rc \
+    init.qcom.asus.rc \
+    init.target.rc
+
 # Input
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
@@ -155,6 +167,15 @@ PRODUCT_COPY_FILES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
+# QTI Common Components
+QTI_COMPONENTS += audio
+QTI_COMPONENTS += bt
+QTI_COMPONENTS += init
+QTI_COMPONENTS += media-legacy
+QTI_COMPONENTS += overlay
+QTI_COMPONENTS += wlan
+TARGET_COMMON_QTI_COMPONENTS += $(QTI_COMPONENTS)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
